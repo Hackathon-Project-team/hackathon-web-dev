@@ -1,70 +1,186 @@
-# Getting Started with Create React App
+Principal LogIn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Shool Name
+* School Address
+* Medium of language
+* Drop-down of 7 days
+* Each Drop-down ___ - ___
 
-## Available Scripts
+* Monday carret-down
+    * 8:00 - 10:00 [REMOVE]
+    * ____ - ____ [Ok]
 
-In the project directory, you can run:
+    When you click on ok run validations
+* Tuesday
+    * ____ - ____
 
-### `yarn start`
+* ....
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Database
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+School1 : {
+    Address : 
+    Princpal Name :
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Volunteer : {
+    Address :
+    Languages :
+    Number of hrs :
+}
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Week : {
+    Monday : {
+        Language1 : {
+            arrV = // Filter by language
+            
+            School1 : {
+                SlotTime
+                // Filter by SlotTime free
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+                vws[arrV[i]][j].weekday == monday {
+                    endTime<SlotTimeStart{
+                        FreeVols . push(arrV[i]);
+                    }
+                }
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+                // Sort according to Worked for less time will be assigned
+                // FreeVols[0]
 
-### `yarn eject`
+                //filter according to dist in FreeVols
+                nearestVws 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+                vws[FreeVols[0]].push({
+                    monday
+                    SlotStartTime
+                    SlotEndTime
+                })
+            }
+            School2 : {
+                Slot
+            }
+        }
+        Language2 : {
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        }
+    }
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Volunteer Work Schedule : [
+    {
+        weekday :
+        StartTime :
+        EndTime :
+    }
+]
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Volunteer LogIn
 
-### Code Splitting
+* Address
+* Languages 
+* Number of working hours per week
+* Since : (Given by us)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Weeks : {
+    Monday : {
+        school1{
+            // v1,v2 - english
+            // v1,v2 - Slotfree
+            // v1,v2
+            // mn = INF
 
-### Making a Progressive Web App
+            // v1 alloted
+        }
+        school2{
+            // v1,v2 - english
+            // v2 - Slotfree
+            // v2
+            // mn = INF
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+            // v2 alloted
+        }
+        school3{
+            // v3
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+            // v3 alloted
+        }
+    }
+}
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+v1=[10 , {
+    school1
+    slot : 9 to 10
+}]
+v2=[10]
+v3=[10]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Principal Login:
+[
+    {
+    school_name : "school1",
+    school_address : " Kalyan", 
+    school_language : "english",
+    "monday" : [9:00,10:00], 
+    "tuesday" : [9:30,10:30],
+    "wednesday" : [11:00,12:00], 
+    "thursday" : [11:30,12:00], 
+    "friday" : [12:00,13:00]
+    }
+
+    {
+    school_name : "school2",
+    school_address : " Thane",
+    school_language : "english",
+    "monday" : [9:00,10:00],
+    "tuesday" : [10:30,11:30],
+    "wednesday" : [12:00,13:00], 
+    "thursday" : [14:00,15:00], 
+    "friday" : [15:00,16:00] 
+    
+    }
+
+    {
+    school_name : "school3",
+    school_address : "Borivali",
+    school_language : "Hindi",
+    "monday" : [9:00,10:00], 
+    "tuesday" : [10:30,11:30],
+    "wednesday" : [14:00,15:00], 
+    "thursday" : [14:00,15:00], 
+    "friday" : [16:00,17:00]
+    }
+
+]
+
+
+Volunteer Login : 
+[
+    {
+    volunteer_address : "Kalyan",
+    volunteer_language: ["english"],
+    volunteer_hours : 10
+    }
+    {
+    volunteer_address : "Thane",
+    volunteer_language: ["english","hindi"],
+    volunteer_hours : 10
+    }
+    {
+    volunteer_address : "Thane",
+    volunteer_language : ["hindi"],
+    volunteer_hours : 10
+    }
+]
